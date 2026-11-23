@@ -103,10 +103,10 @@ Space weather, despite its name, is not traditional atmospheric weather; rather,
        
       <h3 id="Analysis and Discussion">Analysis and Discussion</h3>
 
-<h4 id="Analysis and Discussion", style="padding-left: 10px;">1) Mechanisms and Formation of Space Weather</h4>
+<h4 id="First", style="padding-left: 10px;">1) Mechanisms and Formation of Space Weather</h4>
 
 <!-- First Paragraph: Full Width -->
-<p id="Analysis_InText" style="margin-bottom: 10px;">
+<p id="First_InText" style="margin-bottom: 10px;">
   Space Weather is the physical and phenomenological state of natural space environments.
         The Sun is its main source, which even 150 million kilometers away, can affect the Earth and its enviorment. 
         The Sun is a dynamic and complex star continiuesly emitting radiation. Those particals of radiation are better knowns as space wind.
@@ -242,8 +242,9 @@ Space weather, despite its name, is not traditional atmospheric weather; rather,
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
     const AnalysisCount = displayWordCount("Analysis_InText");
+    const FistCount = displayWordCount("First_InText")
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = IntroductionCount + AnalysisCount + FirstCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
