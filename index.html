@@ -107,7 +107,7 @@ Space weather, despite its name, is not traditional atmospheric weather; rather,
 <h4 id="Analysis and Discussion", style="padding-left: 10px;">1) Mechanisms and Formation of Space Weather</h4>
 
 <!-- First Paragraph: Full Width -->
-<p id="Analysis_InText" style="margin-bottom: 10px;">
+<p id="Analysis_InText1" style="margin-bottom: 10px;">
   Space Weather is the physical and phenomenological state of natural space environments.
         The Sun is its main source, which even 150 million kilometers away, can affect the Earth and its enviorment. 
         The Sun is a dynamic and complex star continiuesly emitting radiation. Those particals of radiation are better knowns as space wind.
@@ -118,7 +118,7 @@ Space weather, despite its name, is not traditional atmospheric weather; rather,
   
   <!-- //// Left Column: Second Paragraph & Future Text //// -->
   <div style="flex: 2; min-width: 300px;">
-    <p id="Analysis_InText" style="margin-top: 0;">
+    <p id="Analysis_InText2" style="margin-top: 0;">
       In addition to the radiation the Sun also produces a magnetic field which covers our whole solar system called the Interplanetary Magnetic Field (IMF). 
         Conditions on the Suns visible surface (Solar Surface) and in its outermost atmosphere, which is extremely hot even hotter than the Sun's surface,
         about 1 million °C compared to 5,500 °C (9,940 °F) according to <a href= "https://scied.ucar.edu/learning-zone/sun-space-weather/corona">UCAR</a> (University Corporation for Atmospheric Research) 
@@ -126,7 +126,7 @@ Space weather, despite its name, is not traditional atmospheric weather; rather,
         ambient plasma, magnetic fields, radiation, particle flows in space, and interaction with the magnetosphere.
     </p>
     
-    <p id="Analysis_InText">
+    <p id="Analysis_InText3">
       Let's talk about Solar Flares first to give you an understanding of these phenomenons. Solar Flare's are explosions happening on the suns surface emitting radiation through the space. Those radiations are caused by high speed particles that happen due to those explosions. 
       Another thing about those solar flames is that the number of those flares increase approximetely every 11 years. Some of those flares may be small but some even are big enough that their radiation reaches the Earth.  
     </p>
@@ -239,9 +239,11 @@ Space weather, despite its name, is not traditional atmospheric weather; rather,
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
+    const Analysis1Count = displayWordCount("Analysis_InText1");
+    const Analysis2Count = displayWordCount("Analysis_InText2");
+    const Analysis3Count = displayWordCount("Analysis_InText3");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = IntroductionCount + AnalysisCount + Analysis1Count + Analysis2Count + Analysis3Count;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
